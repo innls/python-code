@@ -30,7 +30,7 @@ full_data = np.array(ds['value'])   # CONVERT THE 'value' FIELD OF THE DATASET O
 f.flush()
 f.close()
 
-print(full_data.shape)   # FOUR COLUMNS OF DATA :  X,Y, Z COORDS AND THE LABEL ( 0 OR 1 ).   Number Of Rows Is Multiple of 4. 
+print(full_data.shape)   # FOUR COLUMNS OF DATA :  X,Y, Z COORDS AND THE LABEL ( 0 OR 1 ).   Number Of Rows Is Multiple of 16. 
 
 randomized_idx = np.random.permutation( len(full_data) )   
 
